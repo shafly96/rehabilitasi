@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2018 at 10:09 AM
+-- Generation Time: Feb 04, 2018 at 02:01 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -43,25 +43,36 @@ CREATE TABLE `report` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `user` varchar(50) NOT NULL
+  `user` varchar(50) NOT NULL,
+  `gerak1` int(11) NOT NULL DEFAULT '0',
+  `gerak2` int(11) NOT NULL DEFAULT '0',
+  `gerak3` int(11) NOT NULL DEFAULT '0',
+  `gerak4` int(11) NOT NULL DEFAULT '0',
+  `gerak5` int(11) NOT NULL DEFAULT '0',
+  `gerak6` int(11) NOT NULL DEFAULT '0',
+  `gerak7` int(11) NOT NULL DEFAULT '0',
+  `gerak8` int(11) NOT NULL DEFAULT '0',
+  `gerak9` int(11) NOT NULL DEFAULT '0',
+  `gerak10` int(11) NOT NULL DEFAULT '0',
+  `gerak11` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `user`) VALUES
-(1, 'Bambang'),
-(2, 'Winda'),
-(3, 'Didi'),
-(4, 'Nisa'),
-(5, 'Dimas'),
-(6, 'Dedi'),
-(7, 'Santri'),
-(8, 'Aqua'),
-(9, 'tes'),
-(12, 'hehe'),
-(13, 'coba tes');
+INSERT INTO `user` (`id`, `user`, `gerak1`, `gerak2`, `gerak3`, `gerak4`, `gerak5`, `gerak6`, `gerak7`, `gerak8`, `gerak9`, `gerak10`, `gerak11`) VALUES
+(1, 'Bambang', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(2, 'Winda', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(3, 'Didi', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(4, 'Nisa', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(5, 'Dimas', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(6, 'Dedi', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(7, 'Santri', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(8, 'Aqua', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(9, 'tes', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(12, 'hehe', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(13, 'coba tes', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 --
 -- Indexes for dumped tables
