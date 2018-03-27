@@ -18,5 +18,8 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'rehabilitasi'], function () {
 	Route::get('/user', 'RehabilitasiController@user');
+	Route::get('/userID/{id}', 'RehabilitasiController@userID');
+	Route::get('/grafik/{id}', 'RehabilitasiController@grafik');
 	Route::post('/create', 'RehabilitasiController@create');
+	Route::post('/update', 'RehabilitasiController@update');
 });
