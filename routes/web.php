@@ -20,6 +20,7 @@ Route::group(['prefix' => 'rehabilitasi'], function () {
 	Route::get('/user', 'RehabilitasiController@user');
 	Route::get('/userID/{id}', 'RehabilitasiController@userID');
 	Route::get('/grafik/{id}', 'RehabilitasiController@grafik');
+	Route::get('/grafik2/{id}/{gerak}', 'RehabilitasiController@grafik2');
 	Route::post('/create', 'RehabilitasiController@create');
 	Route::post('/update', 'RehabilitasiController@update');
 });

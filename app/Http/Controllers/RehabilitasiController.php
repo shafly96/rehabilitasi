@@ -49,4 +49,25 @@ class RehabilitasiController extends Controller
 
         return view('grafik', compact('user', 'gerak'));
     }
+
+    public function grafik2($id, $gerak){
+        $data = DB::table('report')
+        ->where('id_user','=',$id)
+        ->where('gerak','=',$gerak)
+        ->limit(10)
+        ->get();
+
+        $count = 0;
+
+        foreach ($data as $value) {
+            $count = $count + $value->value;
+        }
+
+        foreach ($data as $value) {
+            $value->value = $value->value/$count*100;
+            $value->tanggal = date_format(date_create($value->tanggal), 'd-m-Y');
+        }
+
+        return view('grafik2', compact('data', 'gerak'));
+    }
 }
